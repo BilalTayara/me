@@ -26,21 +26,21 @@ function convertToWords(char) {
 function showUserImgChoice(userChoice) {
     switch (userChoice) {
         case 'r':
-            document.userImg.src = "images/rock.png";
+            document.userImg.src = "rock.png";
             document.userImg.classList.add("bounceInLeft");
             setTimeout(function() {
                 document.userImg.classList.remove("bounceInLeft")
             }, 700);
             break;
         case 'p':
-            document.userImg.src = "images/paper.png";
+            document.userImg.src = "paper.png";
             document.userImg.classList.add("bounceInLeft");
             setTimeout(function() {
                 document.userImg.classList.remove("bounceInLeft")
             }, 700);
             break;
         case 's':
-            document.userImg.src = "images/scissors.png";
+            document.userImg.src = "scissors.png";
             document.userImg.classList.add("bounceInLeft");
             setTimeout(function() {
                 document.userImg.classList.remove("bounceInLeft")
@@ -53,21 +53,21 @@ function showUserImgChoice(userChoice) {
 function showComputerImgChoice(compChoice) {
     switch (compChoice) {
         case 'r':
-            document.computerImg.src = "images/rock.png";
+            document.computerImg.src = "rock.png";
             document.computerImg.classList.add("bounceInRight");
             setTimeout(function() {
                 document.computerImg.classList.remove("bounceInRight")
             }, 700);
             break;
         case 'p':
-            document.computerImg.src = "images/paper.png";
+            document.computerImg.src = "paper.png";
             document.computerImg.classList.add("bounceInRight");
             setTimeout(function() {
                 document.computerImg.classList.remove("bounceInRight")
             }, 700);
             break;
         case 's':
-            document.computerImg.src = "images/scissors.png";
+            document.computerImg.src = "scissors.png";
             document.computerImg.classList.add("bounceInRight");
             setTimeout(function() {
                 document.computerImg.classList.remove("bounceInRight")
