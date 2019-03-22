@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|PT+Sans');
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	/* supported by Chrome and Opera */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+}
+
+body {
+	background-color: #1a1a1a;
+	font-family: 'PT Sans', sans-serif;
+	line-height: 1.6em;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Baloo Chettan', cursive;
+	display: block;
+	text-align: center;
+}
+
+img {
+	width: 75px;
+}
+
+.intro {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 900;
+	background-color: #1a1a1a;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.intro button {
+	position: absolute;
+	top: 70%;
+	left: 42.5%;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 7px;
+	font-size: 27px;
+	font-weight: bold;
+	font-family: 'Baloo Chettan', cursive;
+	background-color: orange;
+	color: #1a1a1a;
+}
+
+.intro button:hover {
+	cursor: pointer;
+	background-color: #F58220;
+	color: #0a0a0a;
+}
+
+.intro img {
+	position: absolute;
+	top: 30%;
+	left: 42.5%;
+	width: 200px;
+}
+
+.intro p {
+	position: absolute;
+	top: 60%;
+	left: 42%;
+	font-size: 47px;
+	font-weight: bolder;
+}
+
+.hide {
+	display: none;
+}
+
+header {
+	padding: 30px 0;
+	background-color: #ffffff;
+	margin-bottom: 30px;
+}
+
+header h1 {
+	color: #1a1a1a;
+	font-size: 40px;
+}
+
+.scores {
+	padding: 30px 20px;
+	border: 4px solid #ffffff;
+	border-radius: 5px;
+	width: 200px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+.user_badg {
+	background-color: #D60202;
+	padding: 3px 15px;
+	border-radius: 7px 0px;
+	position: absolute;
+	top: 25px;
+	left: -35px;
+	font-size: 18px;
+}
+
+.computer_badg {
+	background-color: #9D0570;
+	padding: 3px 15px;
+	border-radius: 0px 7px;
+	position: absolute;
+	top: 25px;
+	right: -40px;
+	font-size: 18px;
+}
+
+.user_img {
+	position: absolute;
+	top: 7px;
+	left: -120px;
+	animation-duration: 0.7s;
+}
+
+.computer_img {
+	position: absolute;
+	top: 7px;
+	right: -120px;
+	animation-duration: 0.7s;
+}
+
+.choices {
+	margin: 30px auto;
+	text-align: center;
+}
+
+.choice {
+	display: inline-block;
+	border: 5px solid orange;
+	border-radius: 50%;
+	padding: 15px;
+	margin-left: 10px;
+	transition: 0.3s;
+}
+
+.choice:hover {
+	background-color: orange;
+	cursor: pointer;
+	border-color: #3a3a3a;
+}
+
+.choice:active img {
+	width: 80px;
+}
+
+.choice:active {
+	border-color: #D96B0D;
+}
+
+.game-start {
+	text-align: center;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 22px;
+}
+.game-dev {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+.flash_header_win {
+	background-color: #069417;
+}
+
+.flash_header_win h1 {
+	color: #ffffff;
+}
+
+.flash_header_lose {
+	background-color: #9D0570;
+}
+
+.flash_header_lose h1 {
+	color: #ffffff;
+}
+
+.flash_header_draw {
+	background-color: #1a1a1a;
+}
+
+.flash_header_draw h1 {
+	color: #ffffff;
+}
+
+.flash_choice-win {
+	box-shadow: 0 0 10px #57FF45;
+	border-color: #069417
+}
+
+.flash_choice-lose {
+	box-shadow: 0 0 10px #FF0303;
+	border-color: #FF0303
+}
+
+.flash_choice-draw {
+	box-shadow: 0 0 10px #1a1a1a;
+	border-color: #1a1a1a
+}
+
+@media only screen and (max-width: 767px) {
+	.intro button {
+		position: absolute;
+		top: 70%;
+		left: 25%;
+		padding: 7px 20px;
+		border-radius: 7px;
+		font-size: 22px;
+	}
+	.intro p {
+		position: absolute;
+		top: 60%;
+		left: 30%;
+		font-size: 27px;
+		font-weight: bolder;
+	}
+	.intro img {
+		position: absolute;
+		top: 30%;
+		left: 20%;
+		width: 200px;
+	}
+	header h1 {
+		font-size: 27px;
+	}
+	img {
+		width: 65px;
+	}
+	.scores {
+		padding: 20px 10px;
+		border: 4px solid #ffffff;
+		border-radius: 5px;
+		width: 170px;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		font-size: 37px;
+		margin-bottom: 30px;
+	}
+	.user_badg {
+		background-color: #D60202;
+		padding: 3px 12px;
+		border-radius: 7px 0px;
+		position: absolute;
+		top: 13px;
+		left: -30px;
+		font-size: 18px;
+	}
+	.computer_badg {
+		background-color: #9D0570;
+		padding: 3px 12px;
+		border-radius: 0px 7px;
+		position: absolute;
+		top: 13px;
+		right: -35px;
+		font-size: 18px;
+	}
+	.choices {
+		margin: 30px auto;
+		text-align: center;
+	}
+	.choice {
+		display: inline-block;
+		border: 5px solid orange;
+		border-radius: 50%;
+		padding: 7px;
+		margin-left: 5px;
+		transition: 0.3s;
+	}
+	.choice:active img {
+		width: 63px;
+	}
+	.user_img {
+		position: absolute;
+		top: 83px;
+		left: 5px;
+		animation-duration: 0.7s;
+	}
+	.computer_img {
+		position: absolute;
+		top: 83px;
+		right: 5px;
+		animation-duration: 0.7s;
+	}
+	.result-message {
+		margin-top: 85px;
+	}
+	.result-message h1 {
+		font-size: 18px;
+	}
+}

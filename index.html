@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icon.png">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="intro">
+		<img src="images/intro.png">
+		<p class="result"></p>
+		<button id="start_game">Start Game</button>
+	</div>
+	<header id="header">
+		<h1>Rock Paper Scissors</h1>
+	</header>
 
+	<div class="scores">
+
+		<div class="user_badg">User</div>
+		<div class="computer_badg">Comp</div>
+		<span class="user_score">0</span>:<span class="computer_score">0</span>
+		<img class="user_img animated" name="userImg">
+		<img class="computer_img animated" name="computerImg">
+	</div>
+	<div class="result-message">
+		<h1>Result Game</h1>
+	</div>
+	<div class="choices">
+		<div class="choice animated  fadeInLeftBig" id="r">
+			<img src="images/rock.png">
+		</div>
+		<div class="choice animated fadeInUpBig" id="p">
+			<img src="images/paper.png">
+		</div>
+		<div class="choice animated fadeInRightBig" id="s">
+			<img src="images/scissors.png">
+		</div>				
+	</div>
+	<div class="game-start">
+		<p>Make Your Move.</p>
+	</div>
+	<div class="game-dev">
+		<p>done with <span style="color: red"> ♥ </span> Bilal &copy; 2019</p>
+	</div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
